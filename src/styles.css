@@ -1,0 +1,116 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 14;
+  font-weight: 700;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.fireType {
+  border: 2px solid rgba(239, 48, 48, 0.3);
+}
+
+.grassType {
+  border: 2px solid rgba(0, 245, 0, 0.3);
+}
+
+.waterType {
+  border: 2px solid rgba(0, 0, 245, 0.3);
+}
+
+.normalType {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.bugType {
+  border: 2px solid rgba(0, 125, 0, 0.3);
+}
+
+.flyingType {
+  border: 2px solid rgba(101, 232, 242, 0.3);
+}
+
+.poisonType {
+  border: 2px solid rgba(136, 22, 178, 0.3);
+}
+
+.poisongrassType,
+.grasspoisonType {
+  border: 2px solid rgba(0, 245, 0, 0.3);
+  border-top: 2px solid rgba(0, 245, 0, 0.3);
+  border-right: 2px solid rgba(136, 22, 178, 0.3);
+  border-bottom: 2px solid rgba(136, 22, 178, 0.3);
+}
+
+.flyingfireType,
+.fireflyingType {
+  border-left: 2px solid rgba(239, 48, 48, 0.3);
+  border-top: 2px solid rgba(239, 48, 48, 0.3);
+  border-right: 2px solid rgba(101, 232, 242, 0.3);
+  border-bottom: 2px solid rgba(101, 232, 242, 0.3);
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 220px;
+  height: 250px;
+}
+
+.front,
+.back {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.navbar {
+  margin-bottom: 70px;
+}
