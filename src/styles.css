@@ -13,11 +13,7 @@
 }
 
 .fireType {
-  border: 2px solid rgba(239, 48, 48, 0.3);
-}
-
-.grassType {
-  border: 2px solid rgba(0, 245, 0, 0.3);
+  border: 2px solid rgba(190, 29, 14, 0.94);
 }
 
 .waterType {
@@ -37,21 +33,73 @@
 }
 
 .poisonType {
-  border: 2px solid rgba(136, 22, 178, 0.3);
+  border: 2px solid rgba(65, 27, 80, 0.96);
+}
+
+.electricType {
+  border: 2px solid rgba(220, 181, 50, 1);
+}
+
+.grassType {
+  border: 2px solid rgba(5, 122, 27, 0.96);
+}
+
+.psychicType {
+  border: 2px solid rgba(173, 16, 94, 1);
+}
+
+.iceType {
+  border: 2px solid rgba(171, 250, 252, 1);
+}
+
+.groundType {
+  border: 2px solid rgba(112, 69, 0, 1);
 }
 
 .poisongrassType,
 .grasspoisonType {
-  border: 2px solid rgba(0, 245, 0, 0.3);
-  border-top: 2px solid rgba(0, 245, 0, 0.3);
-  border-right: 2px solid rgba(136, 22, 178, 0.3);
-  border-bottom: 2px solid rgba(136, 22, 178, 0.3);
+  border-left: 2px solid rgba(5, 122, 27, 0.96);
+  border-top: 2px solid rgba(5, 122, 27, 0.96);
+  border-right: 2px solid rgba(65, 27, 80, 0.96);
+  border-bottom: 2px solid rgba(65, 27, 80, 0.96);
 }
 
 .flyingfireType,
 .fireflyingType {
-  border-left: 2px solid rgba(239, 48, 48, 0.3);
-  border-top: 2px solid rgba(239, 48, 48, 0.3);
+  border-left: 2px solid rgba(190, 29, 14, 0.94);
+  border-top: 2px solid rgba(190, 29, 14, 0.94);
+  border-right: 2px solid rgba(101, 232, 242, 0.3);
+  border-bottom: 2px solid rgba(101, 232, 242, 0.3);
+}
+
+.flyingbugType,
+.bugflyingType {
+  border-left: 2px solid rgba(0, 125, 0, 0.3);
+  border-top: 2px solid rgba(0, 125, 0, 0.3);
+  border-right: 2px solid rgba(101, 232, 242, 0.3);
+  border-bottom: 2px solid rgba(101, 232, 242, 0.3);
+}
+
+.flyingnormalType,
+.normalFlyingType {
+  border-left: 2px solid rgba(101, 232, 242, 0.3);
+  border-top: 2px solid rgba(101, 232, 242, 0.3);
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.flyingelectricType,
+.electricflyingType {
+  border-left: 2px solid rgba(220, 181, 50, 1);
+  border-top: 2px solid rgba(220, 181, 50, 1);
+  border-right: 2px solid rgba(101, 232, 242, 0.3);
+  border-bottom: 2px solid rgba(101, 232, 242, 0.3);
+}
+
+.flyingiceType,
+.iceflyingType {
+  border-left: 2px solid rgba(171, 250, 252, 1);
+  border-top: 2px solid rgba(171, 250, 252, 1);
   border-right: 2px solid rgba(101, 232, 242, 0.3);
   border-bottom: 2px solid rgba(101, 232, 242, 0.3);
 }
